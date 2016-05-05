@@ -18,6 +18,7 @@ public class EjemploPolimorfismo {
      */
     public static void main(String[] args) {
        ArrayList <Animal> listaAnimales = new ArrayList();
+       ArrayList <IAnimal> listaAnimaless = new ArrayList();
        Animal can = new Can("Kiara"," Palleiro");
        Animal gato = new Gato("Peludo"," negro");
        listaAnimales.add(can);
@@ -43,12 +44,17 @@ public class EjemploPolimorfismo {
         IAnimal cuc = new ReloxoCuco();
         falarPolimorfico(cuc);
         
+        listaAnimaless.add(can);
+        listaAnimaless.add(cuc);
+        listaAnimaless.add(gato);
         
     }
     //metodo con parametro generalista
     public static void falarPolimorfico(IAnimal a){
         a.falar();
-        
+    Cabalo cabalo = new Cabalo();
+    cabalo.falar();
+    
         
     }
     

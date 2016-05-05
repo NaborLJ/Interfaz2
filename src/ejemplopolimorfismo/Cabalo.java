@@ -9,11 +9,11 @@ package ejemplopolimorfismo;
  *
  * @author Nabor
  */
-public interface IAnimal {
-    public abstract void falar();
-    default public void moverse(){
-        System.out.println("El animal se mueve");
-    
-    }  
+public class Cabalo implements IAnimal,Respirable {
+
+    @Override
+    public void falar() {
+        System.out.println(" hihihihih");
+    }
     
 }
